@@ -1,17 +1,17 @@
-/* RESET */
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: #333;
 }
 
-/* CONTAINER */
+
 .container {
     max-width: 1100px;
     margin: auto;
 }
 
-/* HEADER */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -26,7 +26,7 @@ nav a {
     font-size: 14px;
 }
 
-/* PRÉSENTATION */
+
 .presentation {
     padding: 40px 0;
 }
@@ -41,7 +41,7 @@ nav a {
     line-height: 1.6;
 }
 
-/* PROJETS */
+
 .projets {
     padding: 40px 0;
     text-align: center;
@@ -52,14 +52,14 @@ nav a {
     margin-bottom: 30px;
 }
 
-/* GRILLE PROJETS */
+
 .grid-projets {
     display: flex;
     justify-content: center;
     gap: 25px;
 }
 
-.projet-card {
+.projet_etudiant {
     width: 180px;
     height: 180px;
     background-color: #d9d9d9;

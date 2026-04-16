@@ -3,5 +3,4 @@
 
 <img width="316" height="805" alt="Wireframe Page Cours et Formations" src="https://github.com/user-attachments/assets/f7c964c2-7241-4cfe-a378-31dc92140e7c" />
 
-
 # Projet_SiteWeb_JURET-RAFIN_COSTET_DUFOUR
