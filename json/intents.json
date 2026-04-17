@@ -1,0 +1,136 @@
+{
+  "intents": [
+    {
+      "tag": "greet",
+      "patterns": ["Bonjour", "Salut", "Coucou"],
+      "responses": ["Bonjour ! Je suis l'assistant du département Efrei. Comment puis-je vous aider ?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Au revoir", "À bientôt", "À la prochaine"],
+      "responses": ["À bientôt ! N'hésitez pas si vous avez d'autres questions sur l'Efrei."]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Merci", "Merci beaucoup", "Merci pour votre aide"],
+      "responses": ["Avec plaisir ! Je suis là pour vous aider concernant l'Efrei."]
+    },
+    {
+      "tag": "efrei_presentation",
+      "patterns": [
+        "Qu'est-ce que l'Efrei ?",
+        "Présente-moi l'Efrei",
+        "C'est quoi l'école Efrei ?"
+      ],
+      "responses": [
+        "L'Efrei est une grande école d'ingénieurs du numérique située en France. Elle forme des experts en informatique, cybersécurité, data, intelligence artificielle et systèmes embarqués, avec une forte orientation vers l'innovation et l'international."
+      ]
+    },
+    {
+      "tag": "efrei_programs",
+      "patterns": [
+        "Quelles formations propose l'Efrei ?",
+        "Quels sont les cursus à l'Efrei ?",
+        "Programmes Efrei"
+      ],
+      "responses": [
+        "L'Efrei propose plusieurs formations : un programme ingénieur, des bachelors, des masters, ainsi que des formations en alternance. Les domaines couvrent l'informatique, la data, la cybersécurité, les systèmes embarqués et le management technologique."
+      ]
+    },
+    {
+      "tag": "efrei_admission",
+      "patterns": [
+        "Comment intégrer l'Efrei ?",
+        "Conditions d'admission Efrei",
+        "Entrer à l'Efrei"
+      ],
+      "responses": [
+        "L'admission à l'Efrei peut se faire après le bac via Parcoursup, ou en admission parallèle après un bac+2 ou bac+3. Le processus inclut généralement l'étude du dossier et un entretien de motivation."
+      ]
+    },
+    {
+      "tag": "efrei_campus",
+      "patterns": [
+        "Où se situe l'Efrei ?",
+        "Localisation Efrei",
+        "Campus Efrei"
+      ],
+      "responses": [
+        "Le campus principal de l'Efrei est situé à Villejuif, aux portes de Paris. L'école bénéficie d'un environnement dynamique et proche des entreprises du numérique."
+      ]
+    },
+    {
+      "tag": "efrei_departments",
+      "patterns": [
+        "Quels sont les départements de l'Efrei ?",
+        "Départements Efrei",
+        "Spécialisations Efrei"
+      ],
+      "responses": [
+        "L'Efrei propose plusieurs départements spécialisés comme la cybersécurité, la data science, le développement logiciel, les systèmes embarqués et les réseaux. Chaque département permet d'acquérir une expertise approfondie dans son domaine."
+      ]
+    },
+    {
+      "tag": "efrei_student_life",
+      "patterns": [
+        "Vie étudiante Efrei",
+        "Associations Efrei",
+        "Ambiance Efrei"
+      ],
+      "responses": [
+        "La vie étudiante à l'Efrei est très riche avec de nombreuses associations : sport, musique, tech, entrepreneuriat, humanitaire. Les étudiants participent à des événements, hackathons et projets tout au long de l'année."
+      ]
+    },
+    {
+      "tag": "efrei_international",
+      "patterns": [
+        "Efrei international",
+        "Partenariats étrangers Efrei",
+        "Étudier à l'étranger Efrei"
+      ],
+      "responses": [
+        "L'Efrei offre de nombreuses opportunités à l'international avec des échanges universitaires, des doubles diplômes et des stages à l'étranger dans des universités partenaires partout dans le monde."
+      ]
+    },
+    {
+      "tag": "efrei_career",
+      "patterns": [
+        "Débouchés Efrei",
+        "Métiers après Efrei",
+        "Carrière après Efrei"
+      ],
+      "responses": [
+        "Les diplômés de l'Efrei accèdent à des carrières variées : ingénieur logiciel, data scientist, expert cybersécurité, consultant IT, chef de projet ou entrepreneur. Le taux d'insertion professionnelle est très élevé."
+      ]
+    },
+    {
+      "tag": "greenit_definition",
+      "patterns": [
+        "Qu'est-ce que la GreenIT ?",
+        "Définition de la GreenIT",
+        "C'est quoi la GreenIT ?"
+      ],
+      "responses": [
+        "La GreenIT, ou informatique verte, vise à réduire l'empreinte écologique des technologies. C'est un sujet important également abordé à l'Efrei dans certaines spécialisations liées au numérique responsable."
+      ]
+    },
+    {
+      "tag": "contact_efrei",
+      "patterns": [
+        "Contacter Efrei",
+        "Coordonnées Efrei",
+        "Comment contacter l'école"
+      ],
+      "responses": [
+        "Vous pouvez contacter l'Efrei via son site officiel, par email ou lors des journées portes ouvertes. L'école propose aussi des rendez-vous pour les futurs étudiants."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": [
+        "Je ne suis pas sûr de comprendre votre question. Pouvez-vous la reformuler ou préciser votre demande sur l'Efrei ?"
+      ]
+    }
+  ]
+}

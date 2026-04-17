@@ -1,0 +1,224 @@
+  <!DOCTYPE html>
+  <html lang="fr">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>EFREI - Département Informatique</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <a href="https://efrei.fr/"><img src="../img/logo_efrei.png"></a>
+      </div>
+      <nav>
+        <a href="../html/accueil.html">Accueil</a>
+        <a href="../html/cours.html">Cours & Formations</a>
+        <a href="../html/equipe.html">Equipe Enseignante</a>
+        <a href="../html/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="main">
+
+      
+      <section class="hero">
+        <h1>Façonner les ingénieurs du numérique de demain</h1>
+        <p>
+          À l’EFREI, nous formons des experts capables d’innover, de concevoir et de transformer
+          le monde numérique grâce à des compétences solides en développement, data et cybersécurité.
+        </p>
+      </section>
+
+      <div class="carousel">
+        <div class="carousel-track" id="track">
+
+          <div class="slide">
+            <img src="../img/Vie_campus.jpg">
+            <div class="slide-title">Vie étudiante sur le campus</div>
+          </div>
+
+          <div class="slide">
+            <img src="../img/lab.jpg">
+            <div class="slide-title">Projets en laboratoire</div>
+          </div>
+
+          <div class="slide">
+            <img src="../img/tchday.jpg">
+            <div class="slide-title">Événements tech EFREI</div>
+          </div>
+
+        </div>
+
+        <div class="arrow left" onclick="prev()">❮</div>
+        <div class="arrow right" onclick="next()">❯</div>
+      </div>
+
+      
+      <section>
+        <h2>Présentation de l'école</h2>
+
+        <p>
+          Le département informatique de l’EFREI propose une formation complète alliant théorie et pratique.
+          Les étudiants développent des compétences en développement logiciel, intelligence artificielle,
+          cybersécurité et systèmes réseaux.
+        </p>
+
+        <p>
+          Grâce à des projets concrets, des stages et des partenariats avec des entreprises,
+          nos étudiants sont préparés à intégrer rapidement le monde professionnel.
+        </p>
+      </section>
+
+      
+      <section class="projects-section">
+        <h2>Projets de nos étudiants</h2>
+
+        <p>
+          Tout au long de leur formation, les étudiants réalisent des projets innovants en équipe,
+          allant du développement d’applications web à la création de solutions en intelligence artificielle.
+        </p>
+
+        <div class="projects">
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+          <div class="project"></div>
+        </div>
+      </section>
+
+      
+      <section>
+        <h2 style="text-align:center;">Quelques chiffres clés</h2>
+
+        <p style="text-align:center;">
+          Des résultats qui témoignent de la qualité de notre formation.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <h3>95%</h3>
+            <p>Satisfaction étudiants</p>
+          </div>
+
+          <div class="stat">
+            <h3>1200+</h3>
+            <p>Diplômés dans le numérique</p>
+          </div>
+
+          <div class="stat">
+            <h3>80+</h3>
+            <p>Entreprises partenaires</p>
+          </div>
+
+          <div class="stat">
+            <h3>50+</h3>
+            <p>Projets réalisés chaque année</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="events">
+        <h2>Événements</h2>
+
+        <p>
+          Participez à nos événements pour découvrir l’école, rencontrer les enseignants
+          et échanger avec nos étudiants.
+        </p>
+
+        <div class="event-list">
+          <div class="event">
+            <h3>Journée Portes Ouvertes</h3>
+            <p>Découvrez le campus, les formations et échangez avec les étudiants.</p>
+          </div>
+
+          <div class="event">
+            <h3>Conférence IA</h3>
+            <p>Des experts viennent présenter les dernières innovations en intelligence artificielle.</p>
+          </div>
+
+          <div class="event">
+            <h3>Atelier Web</h3>
+            <p>Initiez-vous au développement web à travers des ateliers pratiques.</p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section class="blog-section">
+        <h2>Actualités</h2>
+
+        <p class="blog-desc">
+          Restez informé des dernières nouveautés, événements et réussites de nos étudiants.
+        </p>
+
+        <div class="cards">
+
+          <div class="card">
+            <img src="../img/cybernight.jpg">
+            <div class="card-content">
+              <h3>Hackathon</h3>
+              <p>48h pour concevoir une solution innovante en équipe et relever des défis techniques.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../img/conference.jpg">
+            <div class="card-content">
+              <h3>Conférence IA</h3>
+              <p>Découvrez les dernières avancées en intelligence artificielle avec des experts.</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="../img/jpo.jpg">
+            <div class="card-content">
+              <h3>JPO</h3>
+              <p>Venez visiter le campus et rencontrer les étudiants lors de nos journées portes ouvertes.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+
+    <footer>
+    <div class="footer-content">
+      <p>© 2026 EFREI - Département Informatique</p>
+      <div class="footer-links">
+
+        <a href="https://www.instagram.com/efrei_paris/" target="_blank" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.975.975 1.246 2.242 1.308 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.975.975-2.242 1.246-3.608 1.308-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.975-.975-1.246-2.242-1.308-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.516 2.497 5.783 2.226 7.15 2.163 8.416 2.105 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.013 7.052.072 5.197.157 3.355.673 1.977 2.05.6 3.428.084 5.27 0 7.125-.013 8.405 0 8.814 0 12c0 3.186.013 3.595.072 4.875.085 1.855.601 3.697 1.978 5.074C3.427 23.327 5.27 23.843 7.125 23.928 8.405 23.987 8.814 24 12 24s3.595-.013 4.875-.072c1.855-.085 3.697-.601 5.074-1.978C23.327 20.573 23.843 18.73 23.928 16.875 23.987 15.595 24 15.186 24 12s-.013-3.595-.072-4.875c-.085-1.855-.601-3.697-1.978-5.074C20.573.673 18.73.157 16.875.072 15.595.013 15.186 0 12 0z"/>
+            <path d="M12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8z"/>
+            <circle cx="18.406" cy="5.594" r="1.44"/>
+          </svg>
+        </a>
+
+        <a href="https://www.linkedin.com/school/efrei/" target="_blank" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+
+        <a href="https://www.efrei.fr" target="_blank" aria-label="Site EFREI">
+          <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+    
+
+  </body>
+  </html>
