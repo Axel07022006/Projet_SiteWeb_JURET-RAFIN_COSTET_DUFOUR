@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+
+<!-- header commun à toutes les pages -->
 <header>
   <a href="https://efrei.fr/" target="_blank">
     <img src="../img/logo_efrei.png" height="50" alt="EFREI" style="background:white; padding:5px 10px; border-radius:5px;">
@@ -17,12 +19,18 @@
     <a href="../html/contact.html">Contact</a>
   </nav>
 </header>
+
 <div class="main">
+
+  <!-- bannière de haut de page -->
   <section class="hero-simple">
     <h1>Contactez-nous</h1>
     <p>Une question sur nos formations, un partenariat à proposer ? Notre équipe est à votre écoute.</p>
   </section>
+
+  <!-- grille : infos à gauche, formulaire à droite -->
   <div class="contact-grid">
+
     <div class="contact-info">
       <h2>Nos coordonnées</h2>
       <div class="info-item">
@@ -42,6 +50,8 @@
         <span>Lundi – Vendredi : 9h00 – 18h00</span>
       </div>
     </div>
+
+    <!-- formulaire de contact -->
     <div class="contact-form">
       <h2>Envoyer un message</h2>
       <div class="form-group">
@@ -67,7 +77,10 @@
       </div>
       <button class="btn">Envoyer le message</button>
     </div>
+
   </div>
+
+  <!-- carte google maps intégrée en iframe -->
   <section class="map-section">
     <h2>Nous trouver</h2>
     <div class="map-wrapper">
@@ -80,6 +93,8 @@
       </iframe>
     </div>
   </section>
+
+  <!-- chatbot : répond aux questions via un fichier JSON d'intents -->
   <section id="chatbot-section">
     <h2>Chatbot – Assistant EFREI</h2>
     <p>Posez vos questions à notre assistant intelligent. Il vous répondra instantanément.</p>
@@ -89,7 +104,10 @@
       <button type="button" id="send-btn" onclick="fetchJSON('../json/intents.json')">Envoyer</button>
     </div>
   </section>
+
 </div>
+
+<!-- footer identique aux autres pages -->
 <footer>
   <div class="footer-content">
     <p>© 2026 EFREI - Département Informatique</p>
@@ -116,7 +134,9 @@
     </div>
   </div>
 </footer>
+
 <script src="../js/script.js"></script>
 <script src="../js/chatbot.js"></script>
+
 </body>
 </html>
