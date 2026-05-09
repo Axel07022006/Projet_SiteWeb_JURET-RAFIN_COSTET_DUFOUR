@@ -4,6 +4,22 @@
   <meta charset="UTF-8">
   <title>Formations - EFREI</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    .details-box {
+      display: none;
+      margin-top: 10px;
+      padding: 12px 15px;
+      background: #f5f4ff;
+      border-left: 3px solid #534AB7;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: #333;
+    }
+    .details-box ul {
+      margin: 6px 0 0 1rem;
+    }
+  </style>
 </head>
 <body>
 <header>
@@ -19,19 +35,29 @@
 </header>
 <div class="main">
   <h2>Nos Formations</h2>
- 
+
   <div class="cours-row">
     <div class="cours-text">
       <h2>Programmation en Python</h2>
       <p>Apprentissage des bases de la programmation et des structures de données.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('python')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="python">
+        <strong>Niveau :</strong> Débutant → Intermédiaire &nbsp;|&nbsp; <strong>Volume :</strong> 80h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Variables, fonctions, boucles et structures de contrôle</li>
+          <li>Programmation orientée objet (classes, héritage)</li>
+          <li>Manipulation de fichiers et gestion des exceptions</li>
+          <li>Introduction à NumPy et Matplotlib</li>
+        </ul>
+      </div>
     </div>
     <div class="cours-img">
       <img src="../img/python.jpeg" alt="Python">
     </div>
   </div>
- 
+
   <div class="cours-row">
     <div class="cours-img">
       <img src="../img/langage-c.jpg" alt="Algorithmique">
@@ -39,17 +65,37 @@
     <div class="cours-text">
       <h2>Algorithmique et Structure de Données</h2>
       <p>Comprendre les algorithmes et les structures fondamentales.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('algo')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="algo">
+        <strong>Niveau :</strong> Intermédiaire &nbsp;|&nbsp; <strong>Volume :</strong> 80h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Complexité algorithmique (notation O-grand)</li>
+          <li>Tris, listes chaînées, piles, files</li>
+          <li>Arbres binaires et graphes (BFS, DFS)</li>
+          <li>Programmation dynamique et algorithmes gloutons</li>
+        </ul>
+      </div>
     </div>
   </div>
- 
+
   <div class="cours-row">
     <div class="cours-text">
       <h2>Concepts Réseaux</h2>
       <p>Introduction aux réseaux informatiques et à la cybersécurité.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('reseaux')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="reseaux">
+        <strong>Niveau :</strong> Débutant → Intermédiaire &nbsp;|&nbsp; <strong>Volume :</strong> 60h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Modèle OSI et pile TCP/IP, adressage IPv4/IPv6</li>
+          <li>Protocoles DNS, DHCP, HTTP/HTTPS</li>
+          <li>Firewall, VPN et bases de la cybersécurité</li>
+          <li>Travaux pratiques avec Cisco Packet Tracer</li>
+        </ul>
+      </div>
     </div>
     <div class="cours-img">
       <img src="../img/reseau.webp" alt="Réseaux">
@@ -63,23 +109,43 @@
     <div class="cours-text">
       <h2>Programmation Web</h2>
       <p>HTML, CSS et bases du développement front-end.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('web')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="web">
+        <strong>Niveau :</strong> Débutant &nbsp;|&nbsp; <strong>Volume :</strong> 70h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>HTML5 sémantique et CSS3 (flexbox, grid, animations)</li>
+          <li>JavaScript ES6+ : DOM, événements, fetch API</li>
+          <li>Responsive design et accessibilité (WCAG)</li>
+          <li>Introduction à React et déploiement</li>
+        </ul>
+      </div>
     </div>
   </div>
- 
+
   <div class="cours-row">
     <div class="cours-text">
       <h2>Intelligence Artificielle</h2>
       <p>Introduction au machine learning, aux réseaux de neurones et à l'IA générative.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('ia')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="ia">
+        <strong>Niveau :</strong> Intermédiaire → Avancé &nbsp;|&nbsp; <strong>Volume :</strong> 80h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Régression, classification, clustering</li>
+          <li>Réseaux de neurones (CNN, RNN, Transformers)</li>
+          <li>Frameworks TensorFlow et PyTorch</li>
+          <li>NLP, LLMs et éthique de l'IA</li>
+        </ul>
+      </div>
     </div>
     <div class="cours-img">
       <img src="../img/ia.webp" alt="Intelligence Artificielle">
     </div>
   </div>
- 
+
   <div class="cours-row">
     <div class="cours-img">
       <img src="../img/basededonnees.jpg" alt="Base de données">
@@ -87,85 +153,58 @@
     <div class="cours-text">
       <h2>Bases de Données</h2>
       <p>Conception et manipulation de bases de données relationnelles et NoSQL.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('bdd')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="bdd">
+        <strong>Niveau :</strong> Débutant → Intermédiaire &nbsp;|&nbsp; <strong>Volume :</strong> 60h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Modélisation entité-association et algèbre relationnelle</li>
+          <li>SQL : requêtes, jointures, transactions (ACID)</li>
+          <li>Normalisation des bases de données</li>
+          <li>NoSQL : MongoDB et Redis</li>
+        </ul>
+      </div>
     </div>
   </div>
- 
+
   <div class="cours-row">
     <div class="cours-text">
       <h2>Systèmes et Administration Linux</h2>
       <p>Maîtrise des systèmes Unix/Linux, scripting shell et administration système.</p>
-      <a href="#" class="btn">Détails</a>
+      <button class="btn" onclick="toggleDetails('linux')">Détails</button>
       <a href="../html/contact.html" class="btn secondary">Inscription</a>
+      <div class="details-box" id="linux">
+        <strong>Niveau :</strong> Intermédiaire &nbsp;|&nbsp; <strong>Volume :</strong> 60h<br>
+        <strong>Au programme :</strong>
+        <ul>
+          <li>Architecture Unix, processus, permissions et ACL</li>
+          <li>Commandes essentielles et pipelines</li>
+          <li>Scripting Bash et automatisation (cron)</li>
+          <li>Introduction à Docker et à la virtualisation</li>
+        </ul>
+      </div>
     </div>
     <div class="cours-img">
       <img src="../img/linux.jpg" alt="Linux">
     </div>
   </div>
- 
+
   <section>
     <h2 class="stats-title">Répartition du nombre d'heures</h2>
     <table>
-      <tr>
-        <th>Module</th>
-        <th>CM</th>
-        <th>TP</th>
-        <th>TD</th>
-        <th>Projet</th>
-      </tr>
-      <tr>
-        <td>Programmation Python</td>
-        <td>20</td>
-        <td>30</td>
-        <td>10</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td>Algorithmique</td>
-        <td>25</td>
-        <td>20</td>
-        <td>15</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td>Réseaux</td>
-        <td>15</td>
-        <td>20</td>
-        <td>15</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>Web</td>
-        <td>10</td>
-        <td>30</td>
-        <td>10</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td>Intelligence Artificielle</td>
-        <td>20</td>
-        <td>25</td>
-        <td>10</td>
-        <td>25</td>
-      </tr>
-      <tr>
-        <td>Bases de Données</td>
-        <td>15</td>
-        <td>25</td>
-        <td>10</td>
-        <td>10</td>
-      </tr>
-      <tr>
-        <td>Systèmes et Linux</td>
-        <td>10</td>
-        <td>30</td>
-        <td>10</td>
-        <td>10</td>
-      </tr>
+      <tr><th>Module</th><th>CM</th><th>TP</th><th>TD</th><th>Projet</th></tr>
+      <tr><td>Programmation Python</td><td>20</td><td>30</td><td>10</td><td>20</td></tr>
+      <tr><td>Algorithmique</td><td>25</td><td>20</td><td>15</td><td>20</td></tr>
+      <tr><td>Réseaux</td><td>15</td><td>20</td><td>15</td><td>10</td></tr>
+      <tr><td>Web</td><td>10</td><td>30</td><td>10</td><td>20</td></tr>
+      <tr><td>Intelligence Artificielle</td><td>20</td><td>25</td><td>10</td><td>25</td></tr>
+      <tr><td>Bases de Données</td><td>15</td><td>25</td><td>10</td><td>10</td></tr>
+      <tr><td>Systèmes et Linux</td><td>10</td><td>30</td><td>10</td><td>10</td></tr>
     </table>
   </section>
 </div>
+
 <footer>
   <div class="footer-content">
     <p>© 2026 EFREI - Département Informatique</p>
@@ -192,5 +231,12 @@
     </div>
   </div>
 </footer>
+
+<script>
+  function toggleDetails(id) {
+    var box = document.getElementById(id);
+    box.style.display = box.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
 </body>
 </html>
