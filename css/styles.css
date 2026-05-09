@@ -1,28 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@300;400&display=swap');
-
-/* =============================================
+/*
    GLOBAL — toutes les pages
-   ============================================= */
-
+*/
 :root {
   --blue: #0A316C;
   --white: #FFFFFF;
   --cyan: #81ECEC;
   --yellow: #FDCB6E;
 }
-
+/* reset de base */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
   font-family: 'Open Sans', sans-serif;
   background: var(--blue);
   color: var(--white);
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -30,25 +26,21 @@ header {
   padding: 20px 60px;
   border-bottom: 1px solid rgba(129, 236, 236, 0.15);
 }
-
 .logo a {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-
 .logo img {
   height: 50px;
   filter: brightness(0) invert(1);
 }
-
 .logo-text {
   display: flex;
   flex-direction: column;
   line-height: 1;
   text-decoration: none;
 }
-
 .logo-text .logo-name {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -56,7 +48,6 @@ header {
   color: var(--white);
   letter-spacing: 3px;
 }
-
 .logo-text .logo-sub {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -66,7 +57,7 @@ header {
   text-transform: uppercase;
   margin-top: 3px;
 }
-
+/* liens de navigation */
 nav a {
   margin: 0 15px;
   color: var(--white);
@@ -78,17 +69,15 @@ nav a {
   text-transform: uppercase;
   transition: color 0.2s;
 }
-
 nav a:hover {
   color: var(--cyan);
 }
-
+/* zone principale en blanc */
 .main {
   background: var(--white);
   color: #1a1a2e;
   padding: 60px;
 }
-
 h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -98,17 +87,15 @@ h2 {
   border-left: 4px solid var(--cyan);
   padding-left: 14px;
 }
-
 p {
   font-size: 16px;
   line-height: 1.6;
   color: #333;
 }
-
 section {
   margin-bottom: 60px;
 }
-
+/* boutons principaux et secondaires */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -126,56 +113,47 @@ section {
   margin-top: 12px;
   margin-right: 8px;
 }
-
 .btn.secondary {
   background: transparent;
   color: var(--blue);
   border: 2px solid var(--blue);
 }
-
 .btn:hover {
   opacity: 0.8;
 }
-
 footer {
   background: var(--blue);
   color: rgba(255, 255, 255, 0.7);
   padding: 30px 60px;
   font-size: 14px;
 }
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer-content p{
   color: white;
 }
-
-
 .footer-links {
   display: flex;
   gap: 16px;
   align-items: center;
 }
-
 .footer-links a {
   display: flex;
   align-items: center;
   opacity: 0.8;
   transition: opacity 0.2s;
 }
-
 .footer-links a:hover {
   opacity: 1;
 }
-
 /* =============================================
    accueil.html
    ============================================= */
 
+/* section hero avec dégradé diagonal */
 .hero {
   display: flex;
   align-items: center;
@@ -188,12 +166,10 @@ footer {
   overflow: hidden;
   padding: 50px;
 }
-
 .hero-text {
   flex: 1;
   z-index: 2;
 }
-
 .hero-text h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -202,11 +178,9 @@ footer {
   color: var(--white);
   margin-bottom: 18px;
 }
-
 .hero-text h1 span {
   color: var(--cyan);
 }
-
 .hero-text p {
   font-size: 16px;
   line-height: 1.6;
@@ -214,7 +188,6 @@ footer {
   max-width: 480px;
   margin-bottom: 28px;
 }
-
 .hero-bg {
   flex: 1;
   display: flex;
@@ -222,7 +195,6 @@ footer {
   align-items: center;
   z-index: 1;
 }
-
 .hero-bg img {
   width: 100%;
   height: 240px;
@@ -230,42 +202,36 @@ footer {
   border-radius: 8px;
   filter: saturate(0.8) brightness(0.85);
 }
-
 .hero-buttons {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
 }
-
 .hero-buttons .btn.secondary {
   color: var(--white);
   border-color: rgba(255, 255, 255, 0.5);
 }
-
+/* carrousel */
 .carousel {
   overflow: hidden;
   position: relative;
   margin: 0 0 60px;
   border-radius: 10px;
 }
-
 .carousel-track {
   display: flex;
   transition: transform 0.6s ease;
 }
-
 .slide {
   min-width: 100%;
   position: relative;
 }
-
 .slide img {
   width: 100%;
   height: 340px;
   object-fit: cover;
   filter: brightness(0.75) saturate(0.9);
 }
-
 .slide-title {
   position: absolute;
   bottom: 24px;
@@ -279,7 +245,6 @@ footer {
   letter-spacing: 0.5px;
   border-left: 3px solid var(--cyan);
 }
-
 .arrow {
   position: absolute;
   top: 50%;
@@ -292,32 +257,27 @@ footer {
   border-radius: 4px;
   transition: background 0.2s;
 }
-
 .arrow:hover {
   background: rgba(10, 49, 108, 0.95);
 }
-
 .left { left: 16px; }
 .right { right: 16px; }
-
+/* grille de présentation 2 colonnes */
 .presentation-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   align-items: start;
 }
-
 .presentation-grid p {
   margin-bottom: 14px;
 }
-
 .highlights {
   background: var(--blue);
   border-radius: 10px;
   padding: 28px;
   color: var(--white);
 }
-
 .highlights h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -327,29 +287,25 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-
 .highlights ul {
   list-style: none;
 }
-
 .highlights ul li {
   padding: 10px 0;
   font-size: 15px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
 }
-
 .highlights ul li::before {
   content: "▶ ";
   color: var(--cyan);
   font-size: 10px;
 }
-
+/* cartes projets etudiants */
 .projects {
   display: flex;
   gap: 16px;
 }
-
 .project {
   flex: 1;
   background: #f5f7fb;
@@ -362,7 +318,6 @@ footer {
   color: var(--blue);
   text-align: center;
 }
-
 .project p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -370,7 +325,7 @@ footer {
   color: #555;
   margin-top: 8px;
 }
-
+/* bandeau statistiques */
 .stats {
   display: flex;
   justify-content: space-around;
@@ -379,7 +334,6 @@ footer {
   padding: 40px;
   text-align: center;
 }
-
 .stat h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -387,23 +341,19 @@ footer {
   color: var(--cyan);
   margin-bottom: 6px;
 }
-
 .stat p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 14px;
 }
-
 .stats-title {
   text-align: center;
   border-left: none;
   padding-left: 0;
 }
-
 .event-list {
   display: flex;
   gap: 20px;
 }
-
 .event {
   border: 1px solid #dde3f0;
   padding: 22px;
@@ -411,7 +361,6 @@ footer {
   border-radius: 8px;
   border-top: 3px solid var(--yellow);
 }
-
 .event h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -419,7 +368,6 @@ footer {
   margin-bottom: 8px;
   font-size: 16px;
 }
-
 .event .date {
   font-size: 12px;
   color: var(--blue);
@@ -428,29 +376,25 @@ footer {
   letter-spacing: 1px;
   margin-bottom: 8px;
 }
-
+/* cartes actualités */
 .cards {
   display: flex;
   gap: 20px;
 }
-
 .card {
   flex: 1;
   border: 1px solid #dde3f0;
   border-radius: 10px;
   overflow: hidden;
 }
-
 .card img {
   width: 100%;
   height: 160px;
   object-fit: cover;
 }
-
 .card-content {
   padding: 18px;
 }
-
 .card-content h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -458,17 +402,14 @@ footer {
   margin-bottom: 6px;
   font-size: 16px;
 }
-
 .card-content p {
   font-size: 14px;
   color: #555;
   line-height: 1.5;
 }
-
 /* =============================================
    contact.html
    ============================================= */
-
 .hero-simple {
   text-align: left;
   margin-bottom: 50px;
@@ -476,7 +417,6 @@ footer {
   background: linear-gradient(105deg, var(--blue) 52%, #f0f4fb 52%);
   border-radius: 12px;
 }
-
 .hero-simple h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -484,32 +424,28 @@ footer {
   color: var(--white);
   margin-bottom: 12px;
 }
-
 .hero-simple p {
   color: rgba(255, 255, 255, 0.85);
   font-size: 16px;
   max-width: 480px;
 }
-
+/* grille 2 colonnes : infos + formulaire */
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   margin-bottom: 60px;
 }
-
 .contact-info h2,
 .contact-form h2 {
   margin-bottom: 20px;
 }
-
 .info-item {
   margin-bottom: 14px;
   color: #444;
   font-size: 15px;
   line-height: 1.6;
 }
-
 .info-item strong {
   color: var(--blue);
   font-family: 'Montserrat', sans-serif;
@@ -520,11 +456,9 @@ footer {
   letter-spacing: 1px;
   margin-bottom: 2px;
 }
-
 .form-group {
   margin-bottom: 16px;
 }
-
 .form-group label {
   display: block;
   font-size: 12px;
@@ -535,7 +469,7 @@ footer {
   letter-spacing: 1px;
   margin-bottom: 6px;
 }
-
+/* style uniforme pour les champs du formulaire */
 .form-group input,
 .form-group textarea,
 .form-group select {
@@ -549,18 +483,16 @@ footer {
   outline: none;
   transition: border-color 0.2s;
 }
-
 .form-group input:focus,
 .form-group textarea:focus,
 .form-group select:focus {
   border-color: var(--blue);
 }
-
 .form-group textarea {
   resize: vertical;
   min-height: 120px;
 }
-
+/* section chatbot */
 #chatbot-section {
   background: #f5f7fb;
   border: 1px solid #dde3f0;
@@ -568,18 +500,15 @@ footer {
   padding: 30px;
   margin-bottom: 60px;
 }
-
 #chatbot-section h2 {
   border-left: 4px solid var(--cyan);
   padding-left: 14px;
   margin-bottom: 8px;
 }
-
 #chatbot-section > p {
   margin-bottom: 16px;
   color: #555;
 }
-
 #chat-box {
   background: var(--white);
   border: 1px solid #dde3f0;
@@ -592,7 +521,7 @@ footer {
   flex-direction: column;
   gap: 10px;
 }
-
+/* bulles de messages */
 .msg-user {
   align-self: flex-end;
   background: var(--blue);
@@ -602,7 +531,6 @@ footer {
   max-width: 70%;
   font-size: 14px;
 }
-
 .msg-bot {
   align-self: flex-start;
   background: #e8edf6;
@@ -612,12 +540,10 @@ footer {
   max-width: 70%;
   font-size: 14px;
 }
-
 .chatbot-input-area {
   display: flex;
   gap: 10px;
 }
-
 #user-input {
   flex: 1;
   padding: 10px 14px;
@@ -627,11 +553,9 @@ footer {
   font-size: 14px;
   outline: none;
 }
-
 #user-input:focus {
   border-color: var(--blue);
 }
-
 #send-btn {
   background: var(--blue);
   color: var(--white);
@@ -644,15 +568,14 @@ footer {
   font-size: 13px;
   transition: background 0.2s;
 }
-
 #send-btn:hover {
   background: #0c3d85;
 }
-
 /* =============================================
    cours.html
    ============================================= */
 
+/* chaque ligne cours = image + texte côte à côte */
 .cours-row {
   display: flex;
   gap: 40px;
@@ -662,39 +585,33 @@ footer {
   overflow: hidden;
   border: 1px solid #dde3f0;
 }
-
 .cours-row .cours-img {
   flex: 1;
   min-width: 0;
 }
-
 .cours-row .cours-img img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   display: block;
 }
-
 .cours-row .cours-text {
   flex: 1;
   padding: 30px;
 }
-
 .cours-row .cours-text h2 {
   margin-bottom: 12px;
 }
-
 .cours-row .cours-text p {
   margin-bottom: 16px;
 }
-
+/* tableau des heures */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 15px;
 }
-
 table th {
   background: var(--blue);
   color: var(--white);
@@ -705,46 +622,39 @@ table th {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-
 table td {
   padding: 12px 16px;
   border-bottom: 1px solid #dde3f0;
   color: #333;
   text-align: center;
 }
-
 table tr:nth-child(even) td {
   background: #f5f7fb;
 }
-
 table td:first-child {
   text-align: left;
   font-weight: 600;
   color: var(--blue);
 }
-
 /* =============================================
    equipe.html
    ============================================= */
-
 .custom-list {
   list-style: none;
   margin-top: 16px;
 }
-
 .custom-list li {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
   font-size: 15px;
   color: #333;
 }
-
 .custom-list li::before {
   content: "▶ ";
   color: var(--blue);
   font-size: 10px;
 }
-
+/* on desactive le ::before sur les sections accordion pour eviter le doublon */
 .accordion-section::before {
   display: none !important;
 }
