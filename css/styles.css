@@ -150,6 +150,11 @@ footer {
   align-items: center;
 }
 
+.footer-content p{
+  color: white;
+}
+
+
 .footer-links {
   display: flex;
   gap: 16px;
