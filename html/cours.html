@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Formations - EFREI</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <!-- style spécifique à cette page pour les boites de détails -->
   <style>
     .details-box {
       display: none;
@@ -22,6 +23,7 @@
   </style>
 </head>
 <body>
+
 <header>
   <a href="https://efrei.fr/" target="_blank">
     <img src="../img/logo_efrei.png" height="50" alt="EFREI" style="background:white; padding:5px 10px; border-radius:5px;">
@@ -33,9 +35,11 @@
     <a href="../html/contact.html">Contact</a>
   </nav>
 </header>
+
 <div class="main">
   <h2>Nos Formations</h2>
 
+  <!-- cours Python -->
   <div class="cours-row">
     <div class="cours-text">
       <h2>Programmation en Python</h2>
@@ -58,6 +62,7 @@
     </div>
   </div>
 
+  <!-- Algorithmique -->
   <div class="cours-row">
     <div class="cours-img">
       <img src="../img/langage-c.jpg" alt="Algorithmique">
@@ -80,6 +85,7 @@
     </div>
   </div>
 
+  <!-- reseaux -->
   <div class="cours-row">
     <div class="cours-text">
       <h2>Concepts Réseaux</h2>
@@ -102,6 +108,7 @@
     </div>
   </div>
 
+  <!-- Programmation Web -->
   <div class="cours-row">
     <div class="cours-img">
       <img src="../img/web.jpg" alt="Web">
@@ -124,6 +131,7 @@
     </div>
   </div>
 
+  <!-- Intelligence Artificielle -->
   <div class="cours-row">
     <div class="cours-text">
       <h2>Intelligence Artificielle</h2>
@@ -146,6 +154,7 @@
     </div>
   </div>
 
+  <!-- bases de données -->
   <div class="cours-row">
     <div class="cours-img">
       <img src="../img/basededonnees.jpg" alt="Base de données">
@@ -168,6 +177,7 @@
     </div>
   </div>
 
+  <!-- Linux et admin système -->
   <div class="cours-row">
     <div class="cours-text">
       <h2>Systèmes et Administration Linux</h2>
@@ -190,6 +200,7 @@
     </div>
   </div>
 
+  <!-- tableau récapitulatif des volumes horaires -->
   <section>
     <h2 class="stats-title">Répartition du nombre d'heures</h2>
     <table>
@@ -203,6 +214,7 @@
       <tr><td>Systèmes et Linux</td><td>10</td><td>30</td><td>10</td><td>10</td></tr>
     </table>
   </section>
+
 </div>
 
 <footer>
@@ -232,11 +244,13 @@
   </div>
 </footer>
 
+<!-- fonction pour afficher/masquer les détails d'un cours -->
 <script>
   function toggleDetails(id) {
     var box = document.getElementById(id);
     box.style.display = box.style.display === 'block' ? 'none' : 'block';
   }
 </script>
+
 </body>
 </html>
