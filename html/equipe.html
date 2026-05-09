@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <title>Équipe Enseignante - EFREI</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <!-- styles pour l'accordéon (domaines de recherche, projets, publications) -->
   <style>
     .accordion-section {
       margin-bottom: 8px;
     }
-
     .accordion-btn {
       width: 100%;
       background: none;
@@ -21,13 +21,11 @@
       justify-content: space-between;
       gap: 12px;
     }
-
     .accordion-btn .accordion-label {
       flex: 1;
       font-size: inherit;
       color: inherit;
     }
-
     .accordion-btn .accordion-arrow {
       flex-shrink: 0;
       width: 22px;
@@ -39,23 +37,19 @@
       color: inherit;
       opacity: 0.7;
     }
-
     .accordion-btn[aria-expanded="true"] .accordion-arrow {
       transform: rotate(180deg);
     }
-
     .accordion-body {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.4s ease, opacity 0.3s ease;
       opacity: 0;
     }
-
     .accordion-body.open {
       max-height: 500px;
       opacity: 1;
     }
-
     .accordion-desc {
       padding: 10px 16px 14px 16px;
       font-size: 0.93em;
@@ -69,6 +63,7 @@
   </style>
 </head>
 <body>
+
 <header>
   <a href="https://efrei.fr/" target="_blank">
     <img src="../img/logo_efrei.png" height="50" alt="EFREI" style="background:white; padding:5px 10px; border-radius:5px;">
@@ -80,7 +75,10 @@
     <a href="../html/contact.html">Contact</a>
   </nav>
 </header>
+
 <div class="main">
+
+  <!-- intro de la page -->
   <section>
     <h2>Notre Équipe</h2>
     <p>
@@ -92,6 +90,8 @@
       les étudiants dans leur développement professionnel.
     </p>
   </section>
+
+  <!-- cartes des profs -->
   <section>
     <h2>Enseignants & Intervenants</h2>
     <div class="cards">
@@ -131,6 +131,7 @@
     </div>
   </section>
 
+  <!-- domaines de recherche avec accordeon -->
   <section>
     <h2>Domaines de recherche</h2>
     <p>
@@ -193,6 +194,7 @@
     </ul>
   </section>
 
+  <!-- projets en cours avec les entreprises / labos -->
   <section>
     <h2>Projets de recherche</h2>
     <p>
@@ -242,6 +244,7 @@
     </ul>
   </section>
 
+  <!-- publications et partenariats académiques -->
   <section>
     <h2>Publications & Collaborations</h2>
     <p>
@@ -290,7 +293,9 @@
       </li>
     </ul>
   </section>
+
 </div>
+
 <footer>
   <div class="footer-content">
     <p>© 2026 EFREI - Département Informatique</p>
@@ -317,6 +322,8 @@
     </div>
   </div>
 </footer>
+
+<!-- gestion de l'ouverture/fermeture -->
 <script>
   document.querySelectorAll('.accordion-btn').forEach(function(btn) {
     btn.addEventListener('click', function() {
@@ -328,5 +335,6 @@
     });
   });
 </script>
+
 </body>
 </html>
