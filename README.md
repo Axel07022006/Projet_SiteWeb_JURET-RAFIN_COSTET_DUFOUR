@@ -5,5 +5,9 @@
 
 <img width="348" height="656" alt="image" src="https://github.com/user-attachments/assets/6f2e75be-4375-4930-b616-61a217901f7d" />
 
+Page équipe enseignante : 
+
+<img width="612" height="1144" alt="image" src="https://github.com/user-attachments/assets/74a5f7e9-86e1-4362-9894-3b6d8566f242" />
+
 
 # Projet_SiteWeb_JURET-RAFIN_COSTET_DUFOUR
